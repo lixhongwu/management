@@ -30,7 +30,7 @@
             </div>
           </div>
                 <div class="layout-footer">
-                    2017  © 库特智能股份有限公司
+                    2018  © 中软华腾
                 </div>
 
     </div>
