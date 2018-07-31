@@ -18,6 +18,7 @@
     <vue-markdown>### 富文本框： [quillEditor](https://github.com/surmon-china/vue-quill-editor)</vue-markdown>
     <vue-markdown>### 图表： [百度Echarts](http://echarts.baidu.com)&amp[Vue-Echarts](https://github.com/xlsdg/vue-echarts-v3)</vue-markdown>
     <vue-markdown>### 文件上传： [使用iView自带的文件上传组件](https://www.iviewui.com/components/upload)</vue-markdown>
+    <vue-markdown>### 其他：less jquery</vue-markdown>
 
 </div>
 
