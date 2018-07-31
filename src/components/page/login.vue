@@ -5,7 +5,7 @@
         padding-top: 150px;
         padding-bottom: 200px;
         text-align: center;
-        background: url(../images/back.jpg) no-repeat;
+        background: url(../../images/back.jpg) no-repeat;
         background-size:100%;
     }
     .wrapper .login h4{
@@ -111,7 +111,7 @@
 <template>
     <div class="wrapper" v-bind:style="{height: heightval + 'px' }">>
         <div class="login">
-        <img  src="../images/logo1.png"/>
+        <img  src="../../images/logo1.png"/>
         <form>
             <h4>欢迎登录</h4>
             <div class="user">
@@ -169,7 +169,7 @@
                 }else{
                     this.isshow=false;
                     this.$Message.success('提交成功!');
-                    this.$router.push('/index');
+                    this.$router.push('/table');
                 }
             },
             toggleUserLable:function (el) {
