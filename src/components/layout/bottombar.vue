@@ -20,10 +20,10 @@
   <div style="height: 100%">
     <!-- 由于html不区分大小写，所以js中驼峰命名方式在html中要改成用短横线连接的形式 -->
     <Row type="flex"  style="height: 100%">
-      <i-col :xs="5" :sm="4" :md="3" :lg="2"  class="layout-menu-left menuleft">
+      <i-col :xs="6" :sm="5" :md="4" :lg="3"  class="layout-menu-left menuleft">
         <left-bar></left-bar>
       </i-col>
-      <i-col :xs="19" :sm="20" :md="21" :lg="22"  class="layout-menu-right">
+      <i-col :xs="18" :sm="19" :md="20" :lg="21"  class="layout-menu-right">
         <router-view></router-view>
       </i-col>
     </Row>

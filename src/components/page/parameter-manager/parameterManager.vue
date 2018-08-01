@@ -211,7 +211,7 @@ export default {
         currentData: []
     }
   },
-  create () {
+  created () {
       this.queryListOne(); // 初始化页面调用
   },
   mounted () {},
@@ -328,7 +328,7 @@ export default {
           if (status === '0') {
             this.$http.post(this.$api.PARAM_DELETE, {parameterId: this.rowDataId}, _data => {
               if (_data.resultCode === '000000') {
-                this.$Message.success('删除成功')
+                this.$Message.success('成功')
                 setTimeout(() => {
                   this.queryListOne()
                 },0);
@@ -344,12 +344,14 @@ export default {
     queryListOne (page) {
       this.paramterManager.pageNo = page;
       this.rowDataId = '' // 每次刷新时清除缓存值
-      this.$http.post(this.$api.PARAM_LIST, this.paramterManager, _data =>{
-        this.parameterData = _data.data.list
-        // this.parameterData = {"parameterId":"asdf","parameterName":"阿斯蒂芬","status":"1","parameterDesc":"asdf阿斯蒂芬","createOper":"zss","createTime":"2018-08-01 14:13:11","updateOper":"admin","updateTime":"2018-08-01 14:30:31"}
-        console.log(this.parameterData);
-        this.ParameterManagerTotal = 5;
+      this.$http.get('static/json/param.json').then((_data) => {
+      console.log(JSON.parse(_data.bodyText));
+      var test = JSON.parse(_data.bodyText);
+      console.log(test);
+      this.parameterData = test.list
+      this.ParameterManagerTotal = _data.data.total;
       })
+      
     }
   }
 }
