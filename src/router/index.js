@@ -15,6 +15,10 @@ export default new Router({
                     path: '/mian',
                     component: resolve => require(['../components/page/main.vue'], resolve),
                     children:[{
+                        path: '/parameterManager',
+                        name:'参数管理',
+                        component: resolve => require(['../components/page/parameter-manager/parameterManager.vue'], resolve)
+                    },{
                                     path: '',
                                     name:'表格',
                                     component: resolve => require(['../components/page/home.vue'], resolve)
@@ -52,6 +56,11 @@ export default new Router({
                                   path: '/upload',
                                     name:'upload',
                                   component: resolve => require(['../components/page/upload.vue'], resolve)
+                              },
+                              {
+                            	  path: '/prameterManager',
+                                  name:'prameterManager',
+                                component: resolve => require(['../components/page/parameter-manager/parameterManager.vue'], resolve)
                               }
                           ]}]
 

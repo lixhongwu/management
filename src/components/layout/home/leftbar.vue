@@ -17,6 +17,10 @@
         <MenuItem name="1-2">评论管理</MenuItem>
         <MenuItem name="1-3">举报管理</MenuItem>
       </Submenu>
+      <Menu-item name="parameterManager">
+        <Icon type="document" ></Icon>
+        <span class="layout-text">参数管理</span>
+      </Menu-item>
       <Menu-item name="form">
         <Icon type="document" ></Icon>
         <span class="layout-text">表单</span>
